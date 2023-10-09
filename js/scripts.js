@@ -12,6 +12,13 @@ function getInput() {
   return inputan.value;
 }
 
+inputan.addEventListener("keydown", function (ev) {
+  if (ev.keyCode === 13) {
+    ev.preventDefault();
+    document.querySelector(".button").click();
+  }
+});
+
 async function getWeather() {
   try {
     let location = getInput();
