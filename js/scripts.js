@@ -31,7 +31,7 @@ async function getWeather() {
   } catch (err) {
     console.log(err);
 
-    gambar.setAttribute("src", `./img/space1.jpg`);
+    gambar.setAttribute("src", `./img/error.png`);
     namaKota.innerHTML = "Lokasi tidak ditemukan";
     suhu.innerHTML = "Error";
     kondisi.innerHTML = "Error";
